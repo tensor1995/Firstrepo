@@ -9,7 +9,7 @@ bool checkBST(Node* root) {
        if(node == NULL)  /** if its null then also its a binary search tree.*/
            return true;
 
-       if(node->data >= max || node->data <= min)  checking bounds
+       if(node->data >= max || node->data <= min)  /*checking bounds*/
            return false;
 
        return ( checkImproved(node->left,min,node->data) &&
