@@ -7,6 +7,14 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+/**
+*  Time Complexity : O(N) since we visit each node only once
+*  Space Complexity : O(N) when the tree is unbalanced(when it has only one child at each level)
+*                     O(Log(N)) when the tree is balanced, height of the tree is log(n)
+
+*/
+
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int sum) {
